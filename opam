@@ -1,0 +1,15 @@
+opam-version: "1.2"
+
+ocaml-version: [ >= "4.01.0" ]
+
+name: "coverules"
+
+version: "0.1"
+
+maintainer: "Julien Sagot ju.sagot@gmail.com"
+
+build: [ make "build" ]
+
+install: [ make "bindir=%{bin}%" "install" ]
+
+remove: [ "rm" "-f" "%{bin}%/coverules" ]
